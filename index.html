@@ -25,6 +25,99 @@
     <br />
     <br />
 
+    <!-- del is the old text, that was replaced by the new one in ins -->
+    In the end, I was <del>wrong</del><ins>right</ins>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Many kinds of data can come here like e-mail, addresses and phones -->
+    <address>
+        E-mail: <a href="mailto:me@mail.me">me@mail.me</a>
+        Carrot Street, 42 - 01010 My City
+    </address>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- it is recommended to use the time tag with a human-readable time -->
+    <!-- as its content and a machine-readable time in the datetime attribute -->
+    Published: <time datetime="2020-12-20T20:00:00">Dec. 20th</time>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- blockquote is the tag for, not surprisingly, block quotations, -->
+    <!-- while q is the tag for inline quotations. The cite tag may be used -->
+    <!-- to further explore the source of the quote, which the cite -->
+    <!-- attribute can also be used for. Tip: the tag q usually puts -->
+    <!-- automatically quotes around its inner text -->
+    My uncle said, <q cite="https://myuncle.org/famous-quotes">That's life, kid</q>
+    <blockquote>
+        <p>That's life, kids. Roll with it.</p>
+        <cite>
+            <a href="https://myuncle.org/famous-quotes">Famous quotes</a>, by my uncle
+        </cite>
+    </blockquote>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- one can use bdo or the dir="ltr|rtl" attribute when the direction -->
+    <!-- of the text is known or bdo or dir="auto" when the direction is not known -->
+    Text in arabic: <bdo dir="rtl">...</bdo>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- samp is a tag to show, basically, automated computer outputs -->
+    When things seem bleak, just press <kbd>Alt</kbd> + <kbd>F4</kbd>
+    The computer will not say <samp>Access denied</samp> anymore, yay!
+
+    <br />
+    <br />
+    <br />
+
+    This is very important and should be <mark>marked</mark>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- A result from a calculation inside a form -->
+    <form ...>
+        Enter age: <input type="range" min="0" value="27">
+        <output>You are good to go!</output>
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- dl is a definition list, dt is the definition title, dd is -->
+    <!-- the description for it. When a single definition is desired, -->
+    <!-- the tag dfn can mark a definition term that is explained within the parent’s context -->
+    <dl>
+        <dt>Mario</dt>
+        <dd>An Italian plumber that wears red.</dd>
+        <dt>Luigi</dt>
+        <dd>An Italian plumber that wears green.</dd>
+    </dl>
+    <p><dfn>Mario</dfn> is an Italian plumber that wears red</p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Portal is just like an iframe, but without actually allowing -->
+    <!-- the user to access the inner page -->
+    <!-- TODO : The following tag doesn't work -->
+    <portal src="https://jocelynnsa.netlify.app/"></portal>
 
 </body>
 
