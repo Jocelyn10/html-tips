@@ -119,6 +119,95 @@
     <!-- TODO : The following tag doesn't work -->
     <portal src="https://jocelynnsa.netlify.app/"></portal>
 
+    <br />
+    <br />
+    <br />
+
+    <!-- the datalist tag attaches to an input via the list parameter. -->
+    <!-- Note that it differs from a select, as it can still be filled -->
+    <!-- with any text other than the ones on the list -->
+    <input type="text" name="shopping-item" list="common-groceries">
+    <datalist id="common-groceries">
+        <option value="Eggs">
+        <option value="Cucumber">
+        <option value="Peanuts">
+        <option value="Vodka">
+    </datalist>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- meter’s current implementation in browser automatically colours -->
+    <!-- the bar given the value, red for low, green for “optimum” values -->
+    <!-- and yellow for the in-betweens. For both meter and progress, -->
+    <!-- especially the former, browsers’ implementations vary visually -->
+    <!-- and CSS not always can control every single aspect of those -->
+    <!-- elements, so one should be cautious about implementing this on -->
+    <!-- an actual production environment -->
+    <meter low="3" high="7" max="10" value="5">5</meter>
+    <progress max="100" value="50">50%</progress>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ruby is the wrapping tag, rp is a fallback for non-supporting -->
+    <!-- browsers and rt is for the annotation -->
+    <ruby>
+        漢 <rp>(</rp>
+        <rt>kan</rt>
+        <rp>)</rp>
+        字 <rp>(</rp>
+        <rt>ji</rt>
+        <rp>)</rp>
+    </ruby>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- IE doesn’t support picture and source, but it will fall back to -->
+    <!-- the img there. Also, you can use srcset on img tag too -->
+    <picture>
+        <source srcset="cow-3x.jpg 3x, cow-2x.jpg 2x">
+        <source srcset="cow-print.jpg" media="print">
+        <img src="cow-1x.jpg" alt="A cow">
+    </picture>
+
+    <br />
+    <br />
+    <br />
+
+    <figure>
+        <img src="cow.jpg" alt="A cow">
+        <figcaption>A cow in the pasture</figcaption>
+    </figure>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- Additionally as to being an expandable element — whose state -->
+    <!-- can be detected in JS by the way — details it also is a semantic -->
+    <!-- tag, destined to be used on, you guessed it, details that are -->
+    <!-- not so relevant -->
+    <details>
+        <summary>Working hours</summary>
+        Monday to Friday, 8:00 AM to 6:00 PM
+    </details>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- both a data tag or data-* attributes can be used for that, but -->
+    <!-- the former is preferred if there’s no semantic use in having a -->
+    <!-- tag. The tag would be very useful on JQuery days, but now it is -->
+    <!-- a bit less mainstream -->
+    <data value="user-123">Bob</data> and
+    <data value="user-456">Jim</data>
+
 </body>
 
 </html>
